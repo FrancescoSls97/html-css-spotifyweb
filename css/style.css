@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  height: 100vh;
+  background-color: grey;
+
+  .upper_app {
+    height: calc(100% - 70px);
+    background-color: greenyellow;
+  }
+
+  .bottom_app {
+    height: 70px;
+    background-color: black;
+  }
+}
