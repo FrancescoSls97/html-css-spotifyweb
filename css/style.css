@@ -14,6 +14,28 @@
   height: 100%;
   width: 230px;
   background-color: orange;
+  display: flex;
+  flex-direction: column;
+
+  .side_content {
+    margin: 1rem;
+  }
+
+  .top_nav {
+    display: flex;
+    flex-direction: column;
+
+    span {
+      margin: 0.5rem 0rem;
+    }
+  }
+
+  .playlists {
+    li {
+      list-style: none;
+      margin: 0.5rem 0rem;
+    }
+  }
 }
 
 .upper_app {
@@ -21,7 +43,7 @@
   background-color: greenyellow;
   display: flex;
 
-  .songselect {
+  .song_select {
     height: 100%;
     width: calc(100% - 230px);
     overflow-y: auto;
@@ -42,4 +64,6 @@
 .bottom_app {
   height: 70px;
   background-color: red;
+  display: flex;
+  justify-content: space-between;
 }
