@@ -7,14 +7,39 @@
 .wrapper {
   height: 100vh;
   background-color: grey;
+  overflow: hidden;
+}
 
-  .upper_app {
-    height: calc(100% - 70px);
-    background-color: greenyellow;
+.sidebar {
+  height: 100%;
+  width: 230px;
+  background-color: orange;
+}
+
+.upper_app {
+  height: calc(100% - 70px);
+  background-color: greenyellow;
+  display: flex;
+
+  .songselect {
+    height: 100%;
+    width: calc(100% - 230px);
+    overflow-y: auto;
   }
 
-  .bottom_app {
-    height: 70px;
-    background-color: black;
+  .upgrade {
+    background-color: blue;
+    opacity: 75%;
+    height: 90px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: sticky;
+    top: 0;
   }
+}
+
+.bottom_app {
+  height: 70px;
+  background-color: red;
 }
