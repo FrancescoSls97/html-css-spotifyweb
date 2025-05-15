@@ -1,8 +1,28 @@
+/* CSS Reset */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Root Elements */
+
+:root{
+  --Spotyfy--Main_Text: color: #ffffff;
+  --Spotyfy--Snall_Text: color: #7d7f83;
+  --Spotyfy--Sidebar_bg: color: #000000;
+  --Spotify--Main_bg: color: #141922;
+  --Spotify--Transparent_bg: color: #080b12
+}
+
+/* Common Rules */
+
+.logo{
+  color: var(--Spotyfy--Main_Text);
+}
+
+/* Page Elements */
 
 .wrapper {
   height: 100vh;
@@ -19,6 +39,7 @@
 
   .side_content {
     margin: 1rem;
+
   }
 
   .top_nav {
@@ -27,6 +48,7 @@
 
     span {
       margin: 0.5rem 0rem;
+      }
     }
   }
 
@@ -35,7 +57,7 @@
       list-style: none;
       margin: 0.5rem 0rem;
     }
-  }
+
 }
 
 .upper_app {
