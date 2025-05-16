@@ -21,10 +21,34 @@
 
 .white_text {
   color: var(--Spotyfy--Main_Text);
+  font-weight: bold;
+  margin: 0.5rem 0rem;
 }
 
 .grey_text {
   color: var(--Spotyfy--Small_Text);
+  margin: 0.5rem 0rem;
+}
+
+.container_main {
+  margin: 1rem;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1rem;
+}
+
+.col_4 {
+  width: calc(100% / 12 * 3);
+  flex-basis: auto;
+  margin: 1rem;
 }
 
 /* Page Elements */
@@ -98,7 +122,7 @@
 
 .upper_app {
   height: calc(100% - 70px);
-  background-color: greenyellow;
+  background-color: var(--Spotify--Main_bg);
   display: flex;
 
   .song_select {
@@ -139,6 +163,15 @@
         color: var(--Spotyfy--Small_Text);
         text-transform: uppercase;
         font-weight: bold;
+      }
+    }
+  }
+
+  .container_main {
+    .song_card {
+      figcaption {
+        text-align: center;
+        margin: 0.75rem 0rem;
       }
     }
   }
