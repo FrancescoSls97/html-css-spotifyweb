@@ -45,10 +45,10 @@ img {
   margin: 0 -1rem;
 }
 
-.col_4 {
-  width: calc(100% / 12 * 3);
+.col {
+  width: calc(100% / 6 - 1rem);
   flex-basis: auto;
-  margin: 1rem;
+  margin-right: 1rem;
 }
 
 /* Page Elements */
