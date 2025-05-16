@@ -36,13 +36,17 @@
 
 img {
   max-width: 100%;
+  max-height: 100%;
   vertical-align: center;
+}
+
+.radius {
+  border-radius: 50%;
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -1rem;
 }
 
 .col {
@@ -168,7 +172,7 @@ img {
   }
 
   .container_main {
-    .song_card {
+    .card {
       figcaption {
         text-align: center;
         margin: 0.75rem 0rem;
