@@ -15,6 +15,7 @@
   --Spotyfy--Sidebar_bg: #000000;
   --Spotify--Main_bg: #141922;
   --Spotify--Transparent_bg: #080b12;
+  --Spotify--Bottom_bg: #282828;
 }
 
 /* Common Rules */
@@ -89,6 +90,9 @@ img {
     span {
       margin: 0.5rem 0rem;
       color: var(--Spotyfy--Small_Text);
+      img {
+        display: inline;
+      }
     }
   }
 
@@ -183,8 +187,18 @@ img {
 
 .bottom_app {
   height: 70px;
-  background-color: red;
+  background-color: var(--Spotify--Bottom_bg);
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  padding: 1rem;
+
+  .bottom_left {
+    display: flex;
+    .favourite {
+      align-content: center;
+      i {
+        margin: 1rem;
+      }
+    }
+  }
 }
