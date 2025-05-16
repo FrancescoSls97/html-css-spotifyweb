@@ -17,6 +17,16 @@
   --Spotify--Transparent_bg: #080b12;
 }
 
+/* Common Rules */
+
+.white_text {
+  color: var(--Spotyfy--Main_Text);
+}
+
+.grey_text {
+  color: var(--Spotyfy--Small_Text);
+}
+
 /* Page Elements */
 
 .wrapper {
@@ -29,24 +39,24 @@
   height: 100%;
   width: 230px;
   background-color: var(--Spotyfy--Sidebar_bg);
-  display: flex;
-  flex-direction: column;
 
   .side_content {
     margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     .logo {
       span {
-        color: var(--Spotyfy--Main_Text);
         font-size: 25px;
       }
     }
   }
 
   .top_nav {
+    margin: 1rem 0rem;
     display: flex;
     flex-direction: column;
-    margin: 1rem 0rem;
 
     span {
       margin: 0.5rem 0rem;
@@ -55,7 +65,8 @@
   }
 
   .playlists {
-    margin: 1rem 0rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
     span {
       color: var(--Spotyfy--Main_Text);
       font-size: 14px;
@@ -75,7 +86,15 @@
       }
     }
   }
+
+  .bottom_side {
+    hr {
+      margin: 0.5rem 0rem;
+    }
+  }
 }
+
+/* Main App Content */
 
 .upper_app {
   height: calc(100% - 70px);
@@ -89,7 +108,7 @@
   }
 
   .upgrade {
-    background-color: blue;
+    background-color: var(--Spotify--Transparent_bg);
     opacity: 75%;
     height: 90px;
     display: flex;
@@ -97,6 +116,15 @@
     align-items: center;
     position: sticky;
     top: 0;
+    align-self: center;
+
+    .upgrade_button {
+      text-transform: uppercase;
+      margin-right: 1rem;
+      padding: 0.5rem;
+      border: 2px solid white;
+      border-radius: 1rem;
+    }
   }
 }
 
