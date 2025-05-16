@@ -120,10 +120,26 @@
 
     .upgrade_button {
       text-transform: uppercase;
+      font-size: 10px;
+      font-weight: bold;
       margin-right: 1rem;
-      padding: 0.5rem;
+      padding: 1rem;
       border: 2px solid white;
       border-radius: 1rem;
+    }
+  }
+
+  .top_menu {
+    ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      li {
+        margin: 1rem;
+        color: var(--Spotyfy--Small_Text);
+        text-transform: uppercase;
+        font-weight: bold;
+      }
     }
   }
 }
@@ -133,4 +149,5 @@
   background-color: red;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
