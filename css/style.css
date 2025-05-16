@@ -201,4 +201,20 @@ img {
       }
     }
   }
+
+  .bottom_center {
+    .player {
+      i {
+        margin: 0.75rem;
+      }
+    }
+  }
+
+  .bottom_right {
+    .controls {
+      i {
+        margin: 0.75rem;
+      }
+    }
+  }
 }
