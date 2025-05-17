@@ -67,6 +67,9 @@ img {
   height: 100%;
   width: 230px;
   background-color: var(--Spotyfy--Sidebar_bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   .side_content {
     margin: 1rem;
@@ -75,19 +78,28 @@ img {
     justify-content: space-between;
 
     .logo {
-      span {
-        font-size: 25px;
+      i {
+        color: var(--Spotyfy--Main_Text);
+        font-size: 3.5rem;
+      }
+      .white_text {
+        font-size: 2rem;
+        vertical-align: super;
       }
     }
   }
 
   .top_nav {
     margin: 1rem 0rem;
-    display: flex;
-    flex-direction: column;
-
-    span {
-      margin: 0.5rem 0rem;
+    ul {
+      list-style: none;
+      li {
+        margin: 0.5rem;
+        i {
+          color: var(--Spotyfy--Small_Text);
+          font-size: 1.5rem;
+        }
+      }
     }
   }
 
@@ -115,6 +127,11 @@ img {
   }
 
   .bottom_side {
+    padding: 1rem;
+    font-size: 1.5rem;
+    i {
+      color: var(--Spotyfy--Small_Text);
+    }
     hr {
       margin: 0.5rem 0rem;
     }
@@ -217,12 +234,42 @@ img {
 
 /* Breakpoint rules */
 
-/* 768px */
+/* Medium */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 990px) {
   .col {
     width: calc(100% / 4 - 1rem);
     flex-basis: auto;
     margin-right: 1rem;
+  }
+}
+
+/* small */
+
+@media screen and (max-width: 768px) {
+  .col {
+    width: calc(100% / 2 - 1rem);
+    flex-basis: auto;
+    margin-right: 1rem;
+  }
+}
+
+/* x-small */
+
+@media screen and (max-width: 425px) {
+  .song_select {
+    width: calc(100% - 50px);
+  }
+
+  .side_content {
+    .top_side {
+      span {
+        display: none;
+      }
+    }
+
+    .playlists {
+      display: none;
+    }
   }
 }
