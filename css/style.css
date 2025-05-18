@@ -186,10 +186,20 @@ img {
 
   .container_main {
     .card {
-      figcaption {
-        text-align: center;
-        margin: 0.75rem 0rem;
+      figure {
+        position: relative;
       }
+      i {
+        position: absolute;
+        top: 40%;
+        right: 40%;
+        font-size: 3rem;
+        display: none;
+      }
+    }
+    figcaption {
+      text-align: center;
+      margin: 0.75rem 0rem;
     }
   }
 }
@@ -224,21 +234,20 @@ img {
     .listening {
       display: flex;
       padding: 0.5rem;
-      .track_time{
+      .track_time {
         height: 3px;
         width: 120px;
         background-color: var(--Spotyfy--Small_Text);
       }
-      }
     }
   }
+}
 
-  .bottom_right {
-    padding: 0.5rem;
-    .controls {
-      i {
-        margin: 0.75rem;
-      }
+.bottom_right {
+  padding: 0.5rem;
+  .controls {
+    i {
+      margin: 0.75rem;
     }
   }
 }
@@ -260,7 +269,15 @@ i:hover {
 }
 
 .card:hover {
-  cursor: pointer;
+  figure:hover {
+    cursor: pointer;
+    opacity: 65%;
+    position: relative;
+    i {
+      position: absolute;
+      display: block;
+    }
+  }
 }
 
 .upgrade_button:hover {
