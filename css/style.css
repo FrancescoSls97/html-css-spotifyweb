@@ -177,10 +177,12 @@ img {
     text-transform: uppercase;
     font-weight: bold;
 
-    span {
-      hr {
-        text-decoration: var(--Spotify--Underline);
-      }
+    hr {
+      border: none;
+      background-color: var(--Spotify--Underline);
+      width: 40px;
+      height: 2px;
+      margin: 0.5rem 2rem;
     }
   }
 
@@ -280,8 +282,12 @@ i:hover {
   }
 }
 
-.upgrade_button:hover {
-  font-size: 20px;
+.upgrade_button {
+  span {
+    .white_text:hover {
+      font-size: 2rem;
+    }
+  }
 }
 
 .sidebar {
