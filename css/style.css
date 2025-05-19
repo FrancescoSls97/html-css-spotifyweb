@@ -99,6 +99,7 @@ img {
         i {
           color: var(--Spotyfy--Small_Text);
           font-size: 1.5rem;
+          margin: 0.5rem;
         }
       }
     }
@@ -320,8 +321,10 @@ i:hover {
         cursor: pointer;
       }
       .top_nav {
-        ul:hover {
-          margin-left: 1px solid var(--Spotify--Underline);
+        ul {
+          li:hover {
+            border-left: 0.25rem solid var(--Spotify--Underline);
+          }
         }
       }
     }
@@ -395,6 +398,9 @@ i:hover {
     .bottom_right {
       .controls {
         i {
+          display: none;
+        }
+        .volume {
           display: none;
         }
         .bottom_left_menu {
