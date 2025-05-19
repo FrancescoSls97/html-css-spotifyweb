@@ -227,18 +227,21 @@ img {
   }
 
   .bottom_center {
-    .player {
+    .player_buttons {
+      display: flex;
+      justify-content: space-between;
       i {
-        margin: 0.75rem;
+        margin: 0.5rem;
       }
     }
 
     .listening {
       display: flex;
+      justify-content: space-between;
       padding: 0.5rem;
       .track_time {
         height: 3px;
-        width: 120px;
+        width: 200px;
         background-color: var(--Spotyfy--Small_Text);
       }
     }
@@ -273,7 +276,7 @@ i:hover {
 .card:hover {
   figure:hover {
     cursor: pointer;
-    opacity: 65%;
+    opacity: 40%;
     position: relative;
     i {
       position: absolute;
@@ -282,12 +285,8 @@ i:hover {
   }
 }
 
-.upgrade_button {
-  span {
-    .white_text:hover {
-      font-size: 2rem;
-    }
-  }
+.upgrade_button:hover {
+  transform: scale(110%);
 }
 
 .sidebar {
@@ -295,6 +294,11 @@ i:hover {
     .top_side {
       .white_text:hover {
         cursor: pointer;
+      }
+      .top_nav {
+        ul:hover {
+          margin-left: 1px solid var(--Spotify--Underline);
+        }
       }
     }
   }
@@ -304,7 +308,7 @@ i:hover {
 
 /* Medium */
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 920px) {
   .col {
     width: calc(100% / 4 - 1rem);
     flex-basis: auto;
@@ -324,9 +328,11 @@ i:hover {
 
 /* x-small */
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 620px) {
   .upper_app {
-    width: calc(100% - 50px);
+    .song_select {
+      width: calc(100% - 50px);
+    }
   }
 
   .sidebar {
@@ -348,6 +354,45 @@ i:hover {
   .bottom_side {
     span {
       display: none;
+    }
+  }
+
+  .bottom_app {
+    .bottom_left {
+      .info {
+        display: none;
+      }
+
+      .favourite {
+        display: none;
+      }
+    }
+
+    .bottom_center {
+      .player_buttons {
+        display: flex;
+        flex-wrap: wrap;
+        i {
+          display: none;
+        }
+        .main_p_button {
+          display: block;
+        }
+      }
+      .listening {
+        display: none;
+      }
+    }
+
+    .bottom_right {
+      .controls {
+        i {
+          display: none;
+        }
+        .bottom_left_menu {
+          display: block;
+        }
+      }
     }
   }
 }
